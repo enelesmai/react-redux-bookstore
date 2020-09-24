@@ -1,20 +1,25 @@
 # Project Name
 
-> One paragraph statement about the project.
+> A FrontEnd Bookstare Application made with React and Redux.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+Front-end of an application that will help to organize and manage a bookstore. This app is required to be fast, dynamic and responsive to the actions of the user.
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- Node.js
+- React
+- React-DOM
+- React-Create-App
+- Redux
+- npm
+- CSS
+- ES6
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://rrx-bookstore.herokuapp.com/)
 
 
 ## Getting Started
@@ -27,31 +32,37 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-### Setup
+    Node.js
 
-### Install
+### Getting Started
+
+Get a local copy by cloning this repository
+
+    git clone git@github.com:enelesmai/react-redux-bookstore.git
+
+Go into the repository
+
+    cd react-redux-bookstore
+
+Install dependencies vía NPM
+
+    npm install
+
+Start the application
+
+    npm start
 
 ### Usage
 
-### Run tests
-
-### Deployment
+    **brief description of the application
 
 
 
-## Authors
+👤 **Xóchitl Selene Flores Pérez**
 
-👤 **Author1**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@enelesmai](https://github.com/enelesmai)
+- Twitter: [@enelesmai](https://twitter.com/enelesmai)
+- Linkedin: [xochitlselene](https://linkedin.com/in/xochitlselene)
 
 ## 🤝 Contributing
 
