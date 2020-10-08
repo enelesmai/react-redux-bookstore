@@ -12,8 +12,8 @@ function App() {
         <h1>React-Redux-App</h1>
       </header>
       <div>
-        <BookForm/>
-        <BooksList/>
+        <BookForm />
+        <BooksList />
       </div>
     </div>
   );
