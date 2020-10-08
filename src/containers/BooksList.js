@@ -14,19 +14,25 @@ const BooksList = ({ books }) => (
     </thead>
     <tbody>
       { books.map(book => (
-        <Book key={book.id} id={book.id} title={book.title} category={book.category} />
+        <Book key={book.id} book={book} />
       ))}
     </tbody>
 
   </table>
 );
 
-BooksList.defaultProps = {
-  books: [],
+BooksList.propTypes = {
+  books: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      category: PropTypes.string.isRequired,
+    }),
+  ),
 };
 
-BooksList.propTypes = {
-  books: PropTypes.objectOf(PropTypes.array),
+BooksList.defaultProps = {
+  books: [],
 };
 
 const MapStateToProps = state => ({
