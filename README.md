@@ -56,13 +56,17 @@ Start the application
 
     **brief description of the application
 
-
-
 👤 **Xóchitl Selene Flores Pérez**
 
 - Github: [@enelesmai](https://github.com/enelesmai)
 - Twitter: [@enelesmai](https://twitter.com/enelesmai)
 - Linkedin: [xochitlselene](https://linkedin.com/in/xochitlselene)
+
+👤 **Daniel Santander**
+
+- Github: [@dansantander](https://github.com/dansantander)
+- Linkedin: [Daniel Santander](https://www.linkedin.com/in/daniel-santander)
+- Twitter: [@dansantandr](https://twitter.com/dansantandr)
 
 ## 🤝 Contributing
 
