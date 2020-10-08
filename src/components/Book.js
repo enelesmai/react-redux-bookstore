@@ -22,7 +22,9 @@ Book.defaultProps = {
 };
 
 Book.propTypes = {
-    id: PropTypes.integer,
+    id: PropTypes.number,
     title: PropTypes.string,
     category: PropTypes.string
 };
+
+export default Book;
