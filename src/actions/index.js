@@ -6,9 +6,9 @@ const createBook = book => ({
   book,
 });
 
-const removeBook = (book, index) => ({
+const removeBook = (book, id) => ({
   type: REMOVE_BOOK,
-  index,
+  id,
   book,
 });
 
