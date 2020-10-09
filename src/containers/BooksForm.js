@@ -28,10 +28,11 @@ class BooksForm extends React.Component {
     event.preventDefault();
     const { createBook } = this.props;
     const { title, category } = this.state;
-    createBook({ 
+    createBook({
       id: parseInt(Math.random() * 1000, 10),
-      title: title, 
-      category: category });
+      title,
+      category,
+    });
     this.setState({
       title: '',
       category: '',
