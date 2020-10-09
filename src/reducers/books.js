@@ -5,9 +5,8 @@ const bookReducer = (state = [], action) => {
     case CREATE_BOOK:
       return [...state, action.book];
     case REMOVE_BOOK:
-      let index = state.findIndex(x => x.id ===action.id);
-      return [...state.slice(0, index),
-        ...state.slice(index + 1, state.length)];
+      return [...state.slice(0, state.findIndex(x => x.id === action.id)),
+        ...state.slice(state.findIndex(x => x.id === action.id) + 1, state.length)];
     default:
       return state;
   }

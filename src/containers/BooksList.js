@@ -5,10 +5,9 @@ import Book from '../components/Book';
 import { removeBook } from '../actions/index';
 
 const BooksList = ({ books, removeBook }) => {
-
-  const handleRemoveBook = (book) => {
-    removeBook(book)
-  }
+  const handleRemoveBook = book => {
+    removeBook(book);
+  };
 
   return (
     <table>
@@ -26,7 +25,7 @@ const BooksList = ({ books, removeBook }) => {
       </tbody>
 
     </table>
-  )
+  );
 };
 
 BooksList.propTypes = {
@@ -37,6 +36,7 @@ BooksList.propTypes = {
       category: PropTypes.string.isRequired,
     }),
   ),
+  removeBook: PropTypes.func.isRequired,
 };
 
 BooksList.defaultProps = {
