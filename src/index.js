@@ -9,20 +9,17 @@ import rootReducer from './reducers';
 const defaultStore = {
   books: [
     {
-      /* id: parseInt(Math.random() * 1000, 10), */
-      id: 0,
+      id: parseInt(Math.random() * 1000, 10), 
       title: 'The Peaceful Warrior',
       category: 'Biography',
     },
     {
-      /* id: parseInt(Math.random() * 1000, 10), */
-      id: 1,
+      id: parseInt(Math.random() * 1000, 10),
       title: 'Harry Potter',
       category: 'Kids',
     },
     {
-      /* id: parseInt(Math.random() * 1000, 10), */
-      id: 2,
+      id: parseInt(Math.random() * 1000, 10),
       title: 'The Martian',
       category: 'Sci-Fi',
     },
