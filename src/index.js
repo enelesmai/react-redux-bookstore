@@ -6,20 +6,22 @@ import { createStore } from 'redux';
 import App from './components/App';
 import rootReducer from './reducers';
 
+const randomId = () => parseInt(Math.random() * 1000, 10);
+
 const defaultStore = {
   books: [
     {
-      id: parseInt(Math.random() * 1000, 10),
+      id: randomId(),
       title: 'The Peaceful Warrior',
       category: 'Biography',
     },
     {
-      id: parseInt(Math.random() * 1000, 10),
+      id: randomId(),
       title: 'Harry Potter',
       category: 'Kids',
     },
     {
-      id: parseInt(Math.random() * 1000, 10),
+      id: randomId(),
       title: 'The Martian',
       category: 'Sci-Fi',
     },
