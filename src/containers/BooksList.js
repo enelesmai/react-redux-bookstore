@@ -43,14 +43,14 @@ BooksList.defaultProps = {
   books: [],
 };
 
-const MapStateToProps = state => ({
+const mapStateToProps = state => ({
   books: state.books,
 });
 
-const matchDispatchToProps = dispatch => ({
+const mapDispatchToProps = dispatch => ({
   removeBook: book => {
     dispatch(removeBook(book, book.id));
   },
 });
 
-export default connect(MapStateToProps, matchDispatchToProps)(BooksList);
+export default connect(mapStateToProps, mapDispatchToProps)(BooksList);
