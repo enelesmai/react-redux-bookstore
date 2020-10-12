@@ -26,7 +26,7 @@ const defaultStore = {
       category: 'Sci-Fi',
     },
   ],
-  filter: 'ALL',
+  filter: 'All',
 };
 
 const store = createStore(rootReducer,
