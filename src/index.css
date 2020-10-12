@@ -14,6 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
 }
 
 code {
@@ -24,4 +25,98 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+header {
+  background-color: #fff;
+}
+
+.app-header {
+  display: flex;
+  padding: 0 5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-header h1 {
+  color: #0290ff;
+  font-size: 30px;
+}
+
+.app-header span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatar {
+  border: 2px solid #e8e8e8;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+table {
+  border-spacing: 0;
+}
+
+tr {
+  background-color: #fff;
+}
+
+.update-progress {
+  background-color: #0290ff;
+  border-radius: 3px;
+  width: 184px;
+  height: 33px;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.book-form-container h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #888;
+}
+
+.book-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bookform-input {
+  width: 664px;
+  height: 45px;
+  border: solid 1px #e8e8e8;
+  border-radius: 4px;
+  padding: 0 2rem;
+}
+
+.bookform-select {
+  width: 285px;
+  height: 45px;
+  border: solid 1px #e8e8e8;
+  border-radius: 4px;
+  padding: 0 2rem;
+}
+
+.add-book {
+  font-family: 'RobotoSlab', serif;
+  background-color: #0290ff;
+  width: 184px;
+  height: 45px;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
 }

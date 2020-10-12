@@ -2,10 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Book = ({ book, remove }) => (
-  <tr>
-    <td>{ book.id }</td>
-    <td>{ book.title }</td>
-    <td>{ book.category }</td>
+  <tr className="book">
+    <td className="book-cagegory">{ book.category }</td>
+    <td className="book-title">{ book.title }</td>
+    <td className="book-author">Author</td>
+    <td className="book-id">{ book.id }</td>
     <td>
       <button
         type="button"
