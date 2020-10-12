@@ -66,14 +66,6 @@ header {
   margin: 0 auto;
 }
 
-table {
-  border-spacing: 0;
-}
-
-tr {
-  background-color: #fff;
-}
-
 .update-progress {
   background-color: #0290ff;
   border-radius: 3px;

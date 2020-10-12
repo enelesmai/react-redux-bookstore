@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Book = ({ book, remove }) => (
-  <tr className="book">
-    <td className="book-cagegory">{ book.category }</td>
-    <td className="book-title">{ book.title }</td>
-    <td className="book-author">Author</td>
-    <td className="book-id">{ book.id }</td>
-    <td>
+  <div className="book">
+    <div className="book-cagegory">{ book.category }</div>
+    <div className="book-title">{ book.title }</div>
+    <div className="book-author">Author</div>
+    <div className="book-id">{ book.id }</div>
+    <div>
       <button
         type="button"
         onClick={() => {
@@ -16,8 +16,8 @@ const Book = ({ book, remove }) => (
       >
         Delete
       </button>
-    </td>
-  </tr>
+    </div>
+  </div>
 );
 
 Book.propTypes = {
