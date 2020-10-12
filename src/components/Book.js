@@ -2,20 +2,29 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Book = ({ book, remove }) => (
-  <div className="book">
-    <div className="book-cagegory">{ book.category }</div>
+  <div className="book book-panel">
+    <div className="book-category">{ book.category }</div>
     <div className="book-title">{ book.title }</div>
     <div className="book-author">Author</div>
-    <div className="book-id">{ book.id }</div>
-    <div>
-      <button
-        type="button"
+    <div className="options">
+    <a className="item-option"
+        href="#"
+        >
+        Comments
+      </a>
+      <a className="item-option"
+        href="#"
         onClick={() => {
           remove(book, book.id);
         }}
       >
         Delete
-      </button>
+      </a>
+      <a className="item-option"
+        href="#"
+      >
+        Edit
+      </a>
     </div>
   </div>
 );
