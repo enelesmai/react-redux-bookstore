@@ -5,7 +5,9 @@ import Book from '../components/Book';
 import { removeBook, changeFilter } from '../actions/index';
 import CategoryFilter from '../components/CategoryFilter';
 
-const BooksList = ({ books, filter, removeBook, changeFilter }) => {
+const BooksList = ({
+  books, filter, removeBook, changeFilter,
+}) => {
   const handleRemoveBook = book => {
     removeBook(book);
   };
@@ -15,32 +17,33 @@ const BooksList = ({ books, filter, removeBook, changeFilter }) => {
   };
 
   const displayBook = book => {
-    if(filter==='All'){
+    if (filter === 'All') {
       return true;
-    }else if(filter===book.category){
+    } if (filter === book.category) {
       return true;
     }
-  }
+    return false;
+  };
 
   return (
-  <div>
-    <CategoryFilter change={handleFilterChange} />
-    <table>
-      <thead>
-        <tr>
-          <td>Book ID</td>
-          <td>Title</td>
-          <td>Category</td>
-        </tr>
-      </thead>
-      <tbody>
-        { books.filter(b=> displayBook(b)).map(book => (
-          <Book key={book.id} book={book} remove={handleRemoveBook} />
-        ))}
-      </tbody>
+    <div>
+      <CategoryFilter change={handleFilterChange} />
+      <table>
+        <thead>
+          <tr>
+            <td>Book ID</td>
+            <td>Title</td>
+            <td>Category</td>
+          </tr>
+        </thead>
+        <tbody>
+          { books.filter(b => displayBook(b)).map(book => (
+            <Book key={book.id} book={book} remove={handleRemoveBook} />
+          ))}
+        </tbody>
 
-    </table>
-  </div>
+      </table>
+    </div>
   );
 };
 
@@ -52,16 +55,19 @@ BooksList.propTypes = {
       category: PropTypes.string.isRequired,
     }),
   ),
+  filter: PropTypes.string,
   removeBook: PropTypes.func.isRequired,
+  changeFilter: PropTypes.func.isRequired,
 };
 
 BooksList.defaultProps = {
   books: [],
+  filter: '',
 };
 
 const mapStateToProps = state => ({
   books: state.books,
-  filter: state.filter
+  filter: state.filter,
 });
 
 const mapDispatchToProps = dispatch => ({
