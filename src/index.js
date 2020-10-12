@@ -6,9 +6,7 @@ import { createStore } from 'redux';
 import App from './components/App';
 import rootReducer from './reducers';
 
-const randomId =()=>{
-  return parseInt(Math.random() * 1000, 10)
-}
+const randomId = () => parseInt(Math.random() * 1000, 10);
 
 const defaultStore = {
   books: [
