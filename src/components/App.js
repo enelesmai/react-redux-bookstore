@@ -1,15 +1,17 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import BookForm from '../containers/BooksForm';
 import BooksList from '../containers/BooksList';
 
-function App() {
+const App = () => {
+
   return (
     <div className="app">
       <header className="app-header">
         <div className='left-side'>
           <h1>Bookstore CMS</h1>
           <span>BOOKS</span>
-          <span>CATEGORIES</span>
+          <span></span>
         </div>
         <div className="avatar">
 
@@ -26,6 +28,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;

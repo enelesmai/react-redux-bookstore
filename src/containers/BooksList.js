@@ -6,7 +6,7 @@ import { removeBook, changeFilter } from '../actions/index';
 import CategoryFilter from '../components/CategoryFilter';
 
 const BooksList = ({
-  books, filter, removeBook, changeFilter,
+  books, filter, removeBook, changeFilter
 }) => {
   const handleRemoveBook = book => {
     removeBook(book);
@@ -34,7 +34,6 @@ const BooksList = ({
             <Book key={book.id} book={book} remove={handleRemoveBook} />
           ))}
         </div>
-
       </div>
     </div>
   );
