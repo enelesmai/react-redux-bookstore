@@ -23,11 +23,6 @@ Front-end of an application that will help to organize and manage a bookstore. T
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
@@ -54,7 +49,11 @@ Start the application
 
 ### Usage
 
-    **brief description of the application
+This application allows the management of books by adding new ones using "New book button".
+
+You can use the selector on the top to filter the books by category and see only the books related to the selected category.
+
+You can delete books by using the option "delete" above the title and author labels.
 
 👤 **Xóchitl Selene Flores Pérez**
 
