@@ -119,12 +119,15 @@ header {
   padding: 32px 27px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: #ffffff;
+  background-color: #fff;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .book-category {
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -136,7 +139,7 @@ header {
 
 .book-title {
   margin-top: 7px;
-  font-family: RobotoSlab;
+  font-family: 'RobotoSlab', serif;
   font-size: 22px;
   font-weight: bold;
   font-stretch: normal;
@@ -147,7 +150,7 @@ header {
 }
 
 .book-author {
-  font-family: RobotoSlab;
+  font-family: 'RobotoSlab', serif;
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -159,10 +162,12 @@ header {
 
 .options {
   margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .item-option {
-  font-family: RobotoSlab;
+  font-family: 'RobotoSlab', serif;
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -171,11 +176,50 @@ header {
   letter-spacing: normal;
   color: #4386bf;
   text-decoration: none;
-  padding: 0 34px;
   border-right: solid 1px #e8e8e8;
 }
 
 .item-option:hover {
   color: #4386bf;
   text-decoration: none;
+}
+
+.circle-container {
+  display: flex;
+}
+
+.circle {
+  border: 1px solid blue;
+  border-radius: 50%;
+  width: 68px;
+  height: 68px;
+}
+
+.circle-data span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.circle-data p {
+  color: #888;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+
+.chapter-container h1 {
+  color: #888;
+  font-family: 'RobotoSlab', serif;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.progress-rectangle {
+  font-family: 'RobotoSlab', serif;
+  background-color: #0290ff;
+  width: 184px;
+  height: 33px;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
 }
