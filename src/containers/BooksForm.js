@@ -44,7 +44,7 @@ class BooksForm extends React.Component {
     return (
       <form className="book-form" id="Form" onSubmit={this.handleSubmit}>
         <label htmlFor="Form">
-          <input className="bookform-input" name="title" value={title} id="title" type="text" onChange={this.handleChange} placeholder="Book title"/>
+          <input className="bookform-input" name="title" value={title} id="title" type="text" onChange={this.handleChange} placeholder="Book title" />
         </label>
         <label htmlFor="Form">
           <select className="bookform-select" name="category" value={category} id="category" onChange={this.handleChange}>

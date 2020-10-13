@@ -189,8 +189,10 @@ header {
   letter-spacing: normal;
   color: #4386bf;
   text-decoration: none;
+  border: none;
   border-right: solid 1px #e8e8e8;
   padding: 0 20px;
+  background-color: #fff;
 }
 
 .item-option:first-child {

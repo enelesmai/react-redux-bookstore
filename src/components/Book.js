@@ -8,30 +8,32 @@ const Book = ({ book, remove }) => (
       <div className="book-title">{ book.title }</div>
       <div className="book-author">Author</div>
       <div className="options">
-        <a className="item-option"
-            href="#"
-            >
-            Comments
-        </a>
-        <a className="item-option"
-            href="#"
-            onClick={() => {
-              remove(book, book.id);
-            }}
+        <button
+          className="item-option"
+          type="button"
         >
-            Delete
-        </a>
-        <a className="item-option"
-            href="#"
+          Comments
+        </button>
+        <button
+          className="item-option"
+          type="button"
+          onClick={() => {
+            remove(book, book.id);
+          }}
+        >
+          Delete
+        </button>
+        <button
+          className="item-option"
+          type="button"
         >
           Edit
-        </a>
+        </button>
       </div>
     </div>
 
     <div className="circle-container">
-      <div className="circle">
-      </div>
+      <div className="circle" />
       <div className="circle-data">
         <span>64%</span>
         <p>Completed</p>
