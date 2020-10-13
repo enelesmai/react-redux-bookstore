@@ -196,7 +196,7 @@ header {
 }
 
 .item-option:first-child {
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .item-option:last-child {
@@ -247,7 +247,7 @@ header {
 }
 
 .current-lesson {
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 300;
   font-stretch: normal;
@@ -270,8 +270,8 @@ header {
   margin: 0 auto;
 }
 
-.progress-rectangle>span {
-  font-family: RobotoSlab;
+.progress-rectangle > span {
+  font-family: RobotoSlab, Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 300;
   font-stretch: normal;
@@ -284,7 +284,7 @@ header {
 
 .categories {
   width: 105px;
-  opacity: .5;
+  opacity: 0.5;
   background: #fff;
   margin-top: 12px;
 }
