@@ -42,10 +42,8 @@ const Book = ({ book, remove }) => (
       <h1 className="chapter">
         CURRENT CHAPTER
       </h1>
-      <p>Chapter 17</p>
-      <div className="progress-rectangle">
-        <span>UPDATE PROGRESS</span>
-      </div>
+      <p className="current-lesson">Chapter 17</p>
+      <button className="button-book" type="button">UPDATE PROGRESS</button>
     </div>
   </div>
 );

@@ -4,7 +4,7 @@ const categoryFilter = ({ change }) => {
   const CATEGORIES = ['All', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
   return (
-    <select name="category" id="category" onChange={e => { change(e.target.value); }}>
+    <select className="categories" name="category" id="category" onChange={e => { change(e.target.value); }}>
       {CATEGORIES.map(category => (
         <option key={category} value={category}>{category}</option>
       ))}

@@ -53,7 +53,7 @@ class BooksForm extends React.Component {
             ))}
           </select>
         </label>
-        <button className="add-book" type="submit">ADD BOOK</button>
+        <button className="button-book" type="submit">ADD BOOK</button>
       </form>
     );
   }
