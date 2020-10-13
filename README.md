@@ -2,7 +2,8 @@
 
 > A FrontEnd Bookstare Application made with React and Redux.
 
-![screenshot](./app_screenshot.png)
+![screenshot](https://user-images.githubusercontent.com/5160907/95904647-64d91500-0d5d-11eb-8dab-1e286a27816c.png)
+
 
 Front-end of an application that will help to organize and manage a bookstore. This app is required to be fast, dynamic and responsive to the actions of the user.
 
