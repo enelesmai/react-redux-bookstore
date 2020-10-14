@@ -2,29 +2,48 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Book from '../components/Book';
-import { removeBook } from '../actions/index';
+import { removeBook, changeFilter } from '../actions/index';
+import CategoryFilter from '../components/CategoryFilter';
 
-const BooksList = ({ books, removeBook }) => {
+const BooksList = ({
+  books, filter, removeBook, changeFilter,
+}) => {
   const handleRemoveBook = book => {
     removeBook(book);
   };
 
-  return (
-    <table>
-      <thead>
-        <tr>
-          <td>Book ID</td>
-          <td>Title</td>
-          <td>Category</td>
-        </tr>
-      </thead>
-      <tbody>
-        { books.map(book => (
-          <Book key={book.id} book={book} remove={handleRemoveBook} />
-        ))}
-      </tbody>
+  const handleFilterChange = filter => {
+    changeFilter(filter);
+  };
 
-    </table>
+  const displayBook = book => {
+    if (filter === 'All') {
+      return true;
+    } if (filter === book.category) {
+      return true;
+    }
+    return false;
+  };
+
+  return (
+    <div>
+      <CategoryFilter change={handleFilterChange} />
+      <table>
+        <thead>
+          <tr>
+            <td>Book ID</td>
+            <td>Title</td>
+            <td>Category</td>
+          </tr>
+        </thead>
+        <tbody>
+          { books.filter(b => displayBook(b)).map(book => (
+            <Book key={book.id} book={book} remove={handleRemoveBook} />
+          ))}
+        </tbody>
+
+      </table>
+    </div>
   );
 };
 
@@ -36,20 +55,27 @@ BooksList.propTypes = {
       category: PropTypes.string.isRequired,
     }),
   ),
+  filter: PropTypes.string,
   removeBook: PropTypes.func.isRequired,
+  changeFilter: PropTypes.func.isRequired,
 };
 
 BooksList.defaultProps = {
   books: [],
+  filter: '',
 };
 
 const mapStateToProps = state => ({
   books: state.books,
+  filter: state.filter,
 });
 
 const mapDispatchToProps = dispatch => ({
   removeBook: book => {
     dispatch(removeBook(book, book.id));
+  },
+  changeFilter: filter => {
+    dispatch(changeFilter(filter));
   },
 });
 
